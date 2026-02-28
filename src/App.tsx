@@ -3,7 +3,7 @@ import NavBar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import About from "./components/nft/About";
 import ConnectionInstruction from "./components/nft/ConnectionInstruction";
-import NftPreview from "./components/nft/NftPreview";
+import Nft from "./components/nft/Nft";
 import FloatingStar from "./components/layout/FloatingStar";
 import { STARS } from "./constants/constants";
 
@@ -39,7 +39,7 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
               <About />
               <div className="order-2">
-                {isConnected ? <NftPreview /> : <ConnectionInstruction />}
+                {isConnected ? <Nft /> : <ConnectionInstruction />}
               </div>
             </div>
           </div>
